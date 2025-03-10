@@ -238,8 +238,6 @@ def cli():
 
     # >> Diarize
     if diarize:
-        if hf_token is None:
-            print("Warning, no --hf_token used, needs to be saved in environment variable, otherwise will throw error loading diarization model...")
         tmp_results = results
         print(">>Performing diarization...")
         results = []
